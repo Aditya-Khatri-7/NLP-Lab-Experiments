@@ -1,0 +1,59 @@
+======================================================================
+EXPERIMENT 3 - Processing Data (pre-processing + morphology)
+aditya khatri 500119453
+======================================================================
+[aditya khatri 500119453] reviews loaded: 1000 | labels: {'neg': np.int64(500), 'pos': np.int64(500)}
+
+--- Part 1: pipeline on a single review --- [aditya khatri 500119453]
+[aditya khatri 500119453] original:  " quest for camelot " is warner bros . ' first feature-length , fully-animated attempt to steal clout from disney's cartoon empire , but the mouse has no reason to be worried .  the only other recent challenger to their throne was last fall's promising , if flawed , 20th century fox production " anastasia , " but disney's " hercules , " with its lively cast and colorful palate , had her beat hands-down when it came 
+[aditya khatri 500119453] 1 lowercase + HTML removal done
+[aditya khatri 500119453] 2 tokens: 68 ['quest', 'for', 'camelot', 'is', 'warner', 'bros', 'first', 'feature', 'length', 'fully', 'animated', 'attempt', 'to', 'steal', 'clout']
+[aditya khatri 500119453] 3 after stop-word removal: 38 ['quest', 'camelot', 'warner', 'bros', 'first', 'feature', 'length', 'fully', 'animated', 'attempt', 'steal', 'clout', 'disney', 'cartoon', 'empire']
+[aditya khatri 500119453] 4 stems: ['quest', 'camelot', 'warner', 'bro', 'first', 'featur', 'length', 'fulli', 'anim', 'attempt', 'steal', 'clout', 'disney', 'cartoon', 'empir']
+[aditya khatri 500119453] 5 lemmas (POS-aware): ['quest', 'camelot', 'warner', 'bros', 'first', 'feature', 'length', 'fully', 'animate', 'attempt', 'steal', 'clout', 'disney', 'cartoon', 'empire']
+
+--- Stem vs lemma comparison (rows where they differ) --- [aditya khatri 500119453]
+     token     stem      lemma
+      bros      bro       bros
+   feature   featur    feature
+     fully    fulli      fully
+  animated     anim    animate
+    empire    empir     empire
+     mouse     mous      mouse
+   worried    worri      worry
+challenger challeng challenger
+ promising   promis  promising
+    flawed     flaw     flawed
+   century  centuri    century
+production  product production
+
+--- Part 2: pre-processing full dataset --- [aditya khatri 500119453]
+[aditya khatri 500119453] raw tokens: 738,625 -> clean tokens: 336,363 (54.5% reduced)
+[aditya khatri 500119453] neg top words: [('film', 2470), ('movie', 1780), ('one', 1396), ('get', 1033), ('like', 1031), ('make', 1019), ('character', 914), ('time', 719)]
+[aditya khatri 500119453] pos top words: [('film', 2983), ('movie', 1504), ('one', 1447), ('make', 1020), ('character', 974), ('like', 887), ('get', 858), ('see', 854)]
+
+--- Part 3: morphological analysis --- [aditya khatri 500119453]
+        word   Porter Snowball Lancaster     lemma(v)     lemma(n)     lemma(a)
+     running      run      run       run          run      running      running
+     happily  happili  happili     happy      happily      happily      happily
+ unhappiness  unhappi  unhappi   unhappy  unhappiness  unhappiness  unhappiness
+     studies    studi    studi     study        study        study      studies
+      better   better   better       bet       better       better         good
+    children children children    childr     children        child     children
+     playing     play     play      play         play      playing      playing
+organization    organ    organ       org organization organization organization
+        went     went     went      went           go         went         went
+        mice     mice     mice       mic         mice        mouse         mice
+
+--- Affix segmentation (prefix + root + suffix) --- [aditya khatri 500119453]
+[aditya khatri 500119453] unhappiness -> ('un', 'happi', 'ness')
+[aditya khatri 500119453] replaying -> ('re', 'play', 'ing')
+[aditya khatri 500119453] disagreement -> ('dis', 'agree', 'ment')
+[aditya khatri 500119453] preheated -> ('pre', 'heat', 'ed')
+[aditya khatri 500119453] misunderstanding -> ('mis', 'understand', 'ing')
+[aditya khatri 500119453] readable -> ('', 'read', 'able')
+[aditya khatri 500119453] saved figure -> preprocessing_effect.png
+[aditya khatri 500119453] saved figure -> top_words_by_class.png
+[aditya khatri 500119453] saved figure -> morphology_table.png
+[aditya khatri 500119453] saved figure -> pos_distribution.png
+[aditya khatri 500119453] EXPERIMENT 3 COMPLETED

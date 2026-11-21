@@ -1,0 +1,67 @@
+======================================================================
+EXPERIMENT 4 - Text Mining, Corpus Access and NER
+aditya khatri 500119453
+======================================================================
+
+--- Part 1a: word count --- [aditya khatri 500119453]
+[aditya khatri 500119453] total words: 84 | unique: 57 | after stop-word removal: 70
+[aditya khatri 500119453] sentences: 7 | characters: 685
+
+--- Part 1b: top 10 frequent words --- [aditya khatri 500119453]
+           Word  Frequency
+1      language          7
+2       natural          4
+3    processing          4
+4          text          4
+5       machine          2
+6      learning          2
+7        mining          2
+8   information          2
+9         large          2
+10   artificial          1
+[aditya khatri 500119453] saved figure -> top10_bar.png
+[aditya khatri 500119453] saved figure -> wordcloud.png
+
+--- Part 1c: accessing the Brown corpus --- [aditya khatri 500119453]
+[aditya khatri 500119453] words: 1,161,192 | sentences: 57,340 | categories: 15
+[aditya khatri 500119453] categories: ['adventure', 'belles_lettres', 'editorial', 'fiction', 'government', 'hobbies', 'humor', 'learned', 'lore', 'mystery', 'news', 'religion', 'reviews', 'romance', 'science_fiction']
+[aditya khatri 500119453] first sentence: The Fulton County Grand Jury said Friday an investigation of Atlanta's recent primary election produced `` no evidence '' that any irregularities took place .
+[aditya khatri 500119453] saved figure -> brown_categories.png
+[aditya khatri 500119453] top news words: [('said', 406), ('would', 246), ('new', 241), ('one', 213), ('last', 177), ('two', 174), ('first', 158), ('state', 153), ('year', 142), ('president', 142)]
+
+--- Part 2: Named Entity Recognition (NLTK ne_chunk) --- [aditya khatri 500119453]
+          Entity         Type
+Sushil Ghildiyal       PERSON
+            UPES ORGANIZATION
+        Dehradun          GPE
+           India          GPE
+          Sundar       PERSON
+          Pichai ORGANIZATION
+             CEO ORGANIZATION
+          Google          GPE
+   Narendra Modi       PERSON
+       New Delhi          GPE
+       Microsoft       PERSON
+          GitHub ORGANIZATION
+           Apple       PERSON
+          Mumbai          GPE
+[aditya khatri 500119453] corrected by gazetteer: [('Google', 'ORGANIZATION'), ('Microsoft', 'ORGANIZATION'), ('Apple', 'ORGANIZATION'), ('Sundar Pichai', 'PERSON')]
+[aditya khatri 500119453] entities found: 15 {'ORGANIZATION': np.int64(5), 'GPE': np.int64(4), 'PERSON': np.int64(3), 'DATE': np.int64(2), 'MONEY': np.int64(1)}
+[aditya khatri 500119453] Sushil Ghildiyal       -> PERSON
+[aditya khatri 500119453] UPES                   -> ORGANIZATION
+[aditya khatri 500119453] Dehradun               -> GPE
+[aditya khatri 500119453] India                  -> GPE
+[aditya khatri 500119453] Google                 -> ORGANIZATION
+[aditya khatri 500119453] Narendra Modi          -> PERSON
+[aditya khatri 500119453] New Delhi              -> GPE
+[aditya khatri 500119453] Microsoft              -> ORGANIZATION
+[aditya khatri 500119453] GitHub                 -> ORGANIZATION
+[aditya khatri 500119453] Apple                  -> ORGANIZATION
+[aditya khatri 500119453] Mumbai                 -> GPE
+[aditya khatri 500119453] Sundar Pichai          -> PERSON
+[aditya khatri 500119453] $7.5 billion           -> MONEY
+[aditya khatri 500119453] Monday                 -> DATE
+[aditya khatri 500119453] 2018                   -> DATE
+[aditya khatri 500119453] saved figure -> ner_counts.png
+[aditya khatri 500119453] saved figure -> ner_highlight.png
+[aditya khatri 500119453] EXPERIMENT 4 COMPLETED

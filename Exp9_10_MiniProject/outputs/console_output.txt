@@ -1,0 +1,60 @@
+======================================================================
+EXPERIMENT 9 & 10 - MINI PROJECT: Movie Review Intelligence System
+aditya khatri 500119453
+======================================================================
+[aditya khatri 500119453] corpus: 2000 reviews
+[aditya khatri 500119453] sentiment classifier test accuracy: 85.75%
+
+--- Search + Sentiment + Summary + Keywords --- [aditya khatri 500119453]
+[aditya khatri 500119453] QUERY: a thrilling space adventure with aliens
+[aditya khatri 500119453]  #1 pos/cv562_10359.txt (similarity 0.094) | sentiment POSITIVE (0.76) | true: POSITIVE
+[aditya khatri 500119453]     keywords: ['mib', 'scum', 'aliens', 'movie worth', 'smith', 'computer generated']
+[aditya khatri 500119453]     summary : well , that is what this movie is about . ok , the movie is not just about computer generated aliens .
+[aditya khatri 500119453]  #2 neg/cv990_12443.txt (similarity 0.090) | sentiment NEGATIVE (0.15) | true: NEGATIVE
+[aditya khatri 500119453]     keywords: ['scare', 'new crew', 'experienced cast', 'movie similar', 'way instead', 'actors work']
+[aditya khatri 500119453]     summary : this movie could have been so much better . there was just nothing new here that any of us haven't seen before in aliens or hellraiser .
+[aditya khatri 500119453]  #3 pos/cv425_8250.txt (similarity 0.090) | sentiment POSITIVE (0.80) | true: POSITIVE
+[aditya khatri 500119453]     keywords: ['ellie', 'fax', 'aliens', 'proof', 'religion', 'god']
+[aditya khatri 500119453]     summary : ellie also believes in aliens , and has spent most of her life trying to prove they exist . how can she say she doesn't believe in god because of the lack of proof , and then say she believes in aliens , which are gereally less believed in than god without sounding like a hypocrite ?
+[aditya khatri 500119453] QUERY: romantic comedy with great chemistry
+[aditya khatri 500119453]  #1 pos/cv517_19219.txt (similarity 0.139) | sentiment POSITIVE (0.78) | true: POSITIVE
+[aditya khatri 500119453]     keywords: ['notting hill', 'notting', 'grant', 'spike', 'romantic comedy', 'anna']
+[aditya khatri 500119453]     summary : roberts is terrific as the astonishingly beautiful actress , and grant is surprisingly good as the straightforward guy still trying to get a hold of what has actually happened with this girl . in short , a sweet romantic comedy that has a lot of good laughs , particularly provided by spike .
+[aditya khatri 500119453]  #2 neg/cv218_25651.txt (similarity 0.124) | sentiment NEGATIVE (0.13) | true: NEGATIVE
+[aditya khatri 500119453]     keywords: ['suvari', 'biggs', 'romantic comedy', 'romantic', 'cartoon characters', 'sticks like']
+[aditya khatri 500119453]     summary : so we've got a fish-out-water formula mixed with meet-cute romantic comedy which ideally should make for a good movie . if you're looking for a romantic comedy stay far away from this one because it is neither romantic nor funny .
+[aditya khatri 500119453]  #3 pos/cv358_10691.txt (similarity 0.116) | sentiment POSITIVE (0.88) | true: POSITIVE
+[aditya khatri 500119453]     keywords: ['eachother', 'day lewis', 'boxing', 'ira', 'boxer', 'great love']
+[aditya khatri 500119453]     summary : it's actually three movies in one : a political film , a boxing film , and a love story . i'm not saying they're all equally great , because the love story really carries the film , but at least they all work out respectively .
+[aditya khatri 500119453] QUERY: boring plot and terrible acting
+[aditya khatri 500119453]  #1 neg/cv636_16954.txt (similarity 0.114) | sentiment NEGATIVE (0.11) | true: NEGATIVE
+[aditya khatri 500119453]     keywords: ['ricci', 'lucy', 'garofalo', 'mohr', 'party people', 'kate hudson']
+[aditya khatri 500119453]     summary : the film should have been more about the party than the people trying to get there in my opinion . when lucy runs into a bartender , played by ben affleck , another subplot is formed .
+[aditya khatri 500119453]  #2 neg/cv657_25835.txt (similarity 0.108) | sentiment NEGATIVE (0.14) | true: NEGATIVE
+[aditya khatri 500119453]     keywords: ['snipes', 'chinese', 'wesley snipes', 'wesley', 'rising sun', 'conspiracy']
+[aditya khatri 500119453]     summary : wesley snipes is a master of selecting bad action roles . i am really at a loss to figure out why wesley snipes had the gumption to not only star in this action dud but also act as one of the producers of the film .
+[aditya khatri 500119453]  #3 neg/cv378_21982.txt (similarity 0.102) | sentiment NEGATIVE (0.28) | true: NEGATIVE
+[aditya khatri 500119453]     keywords: ['mystery men', 'captain amazing', 'wannabe', 'save day', 'fart jokes', 'superheroes']
+[aditya khatri 500119453]     summary : the film follows a band of wannabe superheroes living in a wannabe gotham city who are ridiculed by their fellow citizens and villains because of their clumsiness and failure to save they day and capture the bad guy . the first scene in the film , which shows the wannabes trying to save the day , feels like it was seriously edited down .
+
+--- Question answering --- [aditya khatri 500119453]
+[aditya khatri 500119453] Q: Who directed the film?
+[aditya khatri 500119453] A: he wrote this film , he directed this film , he produced this film and he made the excessively creepy score to this film .   [from pos/cv406_21020.txt, score 0.52]
+[aditya khatri 500119453] Q: What was wrong with the special effects?
+[aditya khatri 500119453] A: then we have the special effects . "   [from neg/cv599_22197.txt, score 0.65]
+[aditya khatri 500119453] Q: Why is the acting praised?
+[aditya khatri 500119453] A: this has been praised as wildly original .   [from neg/cv442_15499.txt, score 0.40]
+
+--- Topic discovery with K-Means --- [aditya khatri 500119453]
+[aditya khatri 500119453] topic 0 ( 393 reviews,  46% positive): ['comedy', 'funny', 'characters', 'character', 'school', 'best']
+[aditya khatri 500119453] topic 1 ( 410 reviews,  27% positive): ['people', 'don', 'plot', 'think', 'funny', 'thing']
+[aditya khatri 500119453] topic 2 ( 183 reviews,  74% positive): ['war', 'disney', 'animated', 'animation', 'men', 'battle']
+[aditya khatri 500119453] topic 3 ( 314 reviews,  49% positive): ['action', 'character', 'plot', 'characters', 'thriller', 'scenes']
+[aditya khatri 500119453] topic 4 ( 303 reviews,  45% positive): ['effects', 'special effects', 'alien', 'special', 'planet', 'aliens']
+[aditya khatri 500119453] topic 5 ( 397 reviews,  72% positive): ['life', 'love', 'man', 'characters', 'character', 'family']
+[aditya khatri 500119453] saved figure -> topic_map.png
+[aditya khatri 500119453] saved figure -> topic_sentiment.png
+[aditya khatri 500119453] saved figure -> search_results.png
+[aditya khatri 500119453] saved figure -> sentiment_evidence.png
+[aditya khatri 500119453] saved figure -> architecture.png
+[aditya khatri 500119453] EXPERIMENT 9 & 10 COMPLETED

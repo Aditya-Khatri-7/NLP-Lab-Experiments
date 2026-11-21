@@ -1,0 +1,10 @@
+Model,Perplexity
+Unigram (Laplace),431.2031013326541
+Bigram MLE,249670.49761949267
+Bigram Laplace,1156.2331723124285
+Bigram Add-k 0.05,536.4184032289668
+Bigram Interpolation,268.092122060373
+Bigram Kneser-Ney,220.1833551136092
+Trigram Laplace,3248.9230154757465
+Trigram Interp+KN,347.2068675622331
+Trigram Stupid Backoff,338.7679832509444

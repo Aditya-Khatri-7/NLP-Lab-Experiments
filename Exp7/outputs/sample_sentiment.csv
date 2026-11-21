@@ -1,0 +1,7 @@
+sentence,polarity,subjectivity,vader,label
+"I absolutely love this movie, the acting is brilliant!",0.5,0.533,0.862,Positive
+This was the worst film I have ever seen.,-1.0,1.0,-0.625,Negative
+The movie was released in 2019 and runs for two hours.,0.0,0.0,0.0,Neutral
+I think the plot is quite interesting but a bit slow.,0.1,0.45,0.249,Positive
+It is not good at all.,-0.35,0.6,-0.341,Negative
+"The soundtrack is okay, nothing special.",0.429,0.536,-0.092,Positive

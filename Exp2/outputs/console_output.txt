@@ -1,0 +1,30 @@
+======================================================================
+EXPERIMENT 2 - Text Retrieval & Tokenization
+aditya khatri 500119453
+======================================================================
+
+--- Part 1: retrieving first 100 tweets --- [aditya khatri 500119453]
+[aditya khatri 500119453] total tweets available: 20000 | saved 100 to first_100_tweets.csv / .txt
+[aditya khatri 500119453] tweet 1: RT @KirkKus: Indirect cost of the UK being in the EU is estimated to be costing Britain £170 billion per year!
+[aditya khatri 500119453] tweet 2: VIDEO: Sturgeon on post-election deals http://t.co/BTJwrpbmOY
+[aditya khatri 500119453] tweet 3: RT @LabourEoin: The economy was growing 3 times faster on the day David Cameron became Prime Minister than it 
+
+--- Part 2a: sentence tokenization --- [aditya khatri 500119453]
+[aditya khatri 500119453] tweets: 100 -> sentences: 160 (avg 1.60 per tweet)
+[aditya khatri 500119453] demo text: Dr. Smith loves NLP! Does he teach at U.P.E.S. too? Yes, since 2020.
+[aditya khatri 500119453]   sentence: Dr. Smith loves NLP!
+[aditya khatri 500119453]   sentence: Does he teach at U.P.E.S.
+[aditya khatri 500119453]   sentence: too?
+[aditya khatri 500119453]   sentence: Yes, since 2020.
+
+--- Part 2b: word tokenization (3 tokenizers compared) --- [aditya khatri 500119453]
+[aditya khatri 500119453] sample: Indirect cost of the UK being in the EU is estimated to be costing Britain £170 billion per year! #BetterOffOut #UKIP
+[aditya khatri 500119453] word_tokenize : ['Indirect', 'cost', 'of', 'the', 'UK', 'being', 'in', 'the', 'EU', 'is', 'estimated', 'to', 'be', 'costing', 'Britain', '£170', 'billion', 'per', 'year', '!', '#', 'BetterOffOut', '#', 'UKIP']
+[aditya khatri 500119453] TweetTokenizer: ['indirect', 'cost', 'of', 'the', 'uk', 'being', 'in', 'the', 'eu', 'is', 'estimated', 'to', 'be', 'costing', 'britain', '£', '170', 'billion', 'per', 'year', '!', '#betteroffout', '#ukip']
+[aditya khatri 500119453] Whitespace    : ['Indirect', 'cost', 'of', 'the', 'UK', 'being', 'in', 'the', 'EU', 'is', 'estimated', 'to', 'be', 'costing', 'Britain', '£170', 'billion', 'per', 'year!', '#BetterOffOut', '#UKIP']
+[aditya khatri 500119453] total tokens: 2024 | word tokens: 1567 | vocabulary: 646
+[aditya khatri 500119453] top 15: [('the', 70), ('to', 46), ('a', 31), ('miliband', 25), ('snp', 25), ('in', 24), ('of', 23), ('is', 23), ('on', 22), ('ed', 17), ('labour', 16), ('with', 15), ('cameron', 14), ('and', 13), ('for', 13)]
+[aditya khatri 500119453] saved figure -> top_tokens.png
+[aditya khatri 500119453] saved figure -> token_distributions.png
+[aditya khatri 500119453] saved figure -> tokenizer_comparison.png
+[aditya khatri 500119453] EXPERIMENT 2 COMPLETED

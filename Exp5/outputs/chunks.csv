@@ -1,0 +1,15 @@
+sentence,chunk,text
+The intelligent student solved the diffi...,NP,The intelligent student
+The intelligent student solved the diffi...,VP,solved
+The intelligent student solved the diffi...,NP,the difficult NLP problem
+The intelligent student solved the diffi...,PP,in the laboratory
+The intelligent student solved the diffi...,NP,the laboratory
+Machine learning models can quickly proc...,NP,Machine
+Machine learning models can quickly proc...,VP,learning
+Machine learning models can quickly proc...,NP,models
+Machine learning models can quickly proc...,VP,process
+Machine learning models can quickly proc...,NP,large text corpora
+She is reading a new book about natural ...,VP,is reading
+She is reading a new book about natural ...,NP,a new book
+She is reading a new book about natural ...,PP,about natural language processing
+She is reading a new book about natural ...,NP,natural language processing

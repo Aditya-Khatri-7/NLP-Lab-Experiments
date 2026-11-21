@@ -1,0 +1,50 @@
+======================================================================
+EXPERIMENT 8 - Text Summarization and Meaning of Sentences
+aditya khatri 500119453
+======================================================================
+
+--- Part 1a: word senses (WordNet) --- [aditya khatri 500119453]
+[aditya khatri 500119453] 'bank' has 18 senses; first 4:
+[aditya khatri 500119453]    bank.n.01        sloping land (especially the slope beside a body of water)
+[aditya khatri 500119453]    depository_financial_institution.n.01 a financial institution that accepts deposits and channels the money into lending activities
+[aditya khatri 500119453]    bank.n.03        a long ridge or pile
+[aditya khatri 500119453]    bank.n.04        an arrangement of similar objects in a row or in tiers
+[aditya khatri 500119453] 'light' has 47 senses; first 4:
+[aditya khatri 500119453]    light.n.01       (physics) electromagnetic radiation that can produce a visual sensation
+[aditya khatri 500119453]    light.n.02       any device serving as a source of illumination
+[aditya khatri 500119453]    light.n.03       a particular perspective or aspect of a situation
+[aditya khatri 500119453]    luminosity.n.01  the quality of being luminous; emitting or reflecting light
+
+--- Part 1b: word sense disambiguation (Lesk) --- [aditya khatri 500119453]
+[aditya khatri 500119453] 'bank' in 'I went to the bank to deposit my money' -> depository_financial_institution.n.01 | a financial institution that accepts deposits and channels the money into lending activities
+[aditya khatri 500119453] 'bank' in 'The fisherman sat on the bank of the river' -> bank.n.01 | sloping land (especially the slope beside a body of water)
+[aditya khatri 500119453] 'bass' in 'He plays the bass guitar in a band' -> bass.n.02 | the lowest part in polyphonic music
+[aditya khatri 500119453] 'bass' in 'We caught a large bass in the lake' -> bass.n.02 | the lowest part in polyphonic music
+
+--- Part 1c: sentence similarity --- [aditya khatri 500119453]
+[aditya khatri 500119453] Jaccard=0.00 Cosine=0.34 WordNet=0.53 | 'The movie was great and entertaining' ~ 'The film was wonderful and fun'
+[aditya khatri 500119453] Jaccard=0.00 Cosine=0.09 WordNet=0.18 | 'The movie was great and entertaining' ~ 'The weather is cold in winter'
+[aditya khatri 500119453] Jaccard=0.60 Cosine=0.54 WordNet=0.83 | 'I loved the acting of the lead actor' ~ 'The lead actor's performance was loved'
+[aditya khatri 500119453] saved figure -> sentence_similarity.png
+
+--- Part 2a: summarising one review with each method --- [aditya khatri 500119453]
+[aditya khatri 500119453] original review: 12 sentences, 278 words
+[aditya khatri 500119453] TEXT: the happy bastard's quick movie review damn that y2k bug . it's got a head start in this movie starring jamie lee curtis and another baldwin brother ( william this time ) in a story regarding a crew of a tugboat that comes across a deserted russian tech ship that has a strangeness to it when they kick the power back on . little do they know the power within . going for the gore and bringing on a few action sequences here and there , virus still feels very empty , like a movie going for all flash and no substance . we don't know why the crew was really out in the middle of nowhere , we don't kn ...
+[aditya khatri 500119453] [Frequency] sutherland is wasted and baldwin , well , he's acting like a baldwin , of course . so , if robots and body parts really turn you on , here's your movie . otherwise , it's pretty much a sunken ship of a movie .
+[aditya khatri 500119453] [TF-IDF] little do they know the power within . the acting is below average , even from the likes of curtis . otherwise , it's pretty much a sunken ship of a movie .
+[aditya khatri 500119453] [TextRank] it's got a head start in this movie starring jamie lee curtis and another baldwin brother ( william this time ) in a story regarding a crew of a tugboat that comes across a deserted russian tech ship that has a strangeness to it when they kick the power back on . we don't know why the crew was really out in the middle of nowhere , we don't know the origin of what took over the ship ( just that a big pink flashy thing hit the mir ) , and , of course , we don't know why donald sutherland is stumbling around drunkenly throughout . sutherland is wasted and baldwin , well , he's acting like a baldwin , of course .
+[aditya khatri 500119453] [Lead-3] the happy bastard's quick movie review damn that y2k bug . it's got a head start in this movie starring jamie lee curtis and another baldwin brother ( william this time ) in a story regarding a crew of a tugboat that comes across a deserted russian tech ship that has a strangeness to it when they kick the power back on . little do they know the power within .
+
+--- Part 2b: evaluation on 60 IMDB reviews --- [aditya khatri 500119453]
+           compression  rouge1  keyword  sentiment_kept
+method                                                 
+Frequency        0.249   0.399    0.339           0.700
+Lead-3           0.271   0.428    0.372           0.783
+TF-IDF           0.129   0.200    0.242           0.700
+TextRank         0.282   0.447    0.360           0.750
+[aditya khatri 500119453] best ROUGE-1: TextRank | best keyword coverage: Lead-3 | best sentiment preservation: Lead-3
+[aditya khatri 500119453] saved figure -> textrank_scores.png
+[aditya khatri 500119453] saved figure -> summarizer_comparison.png
+[aditya khatri 500119453] saved figure -> summary_highlight.png
+[aditya khatri 500119453] saved figure -> review_lengths.png
+[aditya khatri 500119453] EXPERIMENT 8 COMPLETED

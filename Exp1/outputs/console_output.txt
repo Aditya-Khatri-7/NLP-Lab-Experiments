@@ -1,0 +1,44 @@
+======================================================================
+EXPERIMENT 1 - Employee CSV analysis (average salary by department)
+aditya khatri 500119453
+======================================================================
+
+--- First 5 rows --- [aditya khatri 500119453]
+ EmpID         Name   Department  Experience  Salary
+  1001 Employee_001           HR           5   53845
+  1002 Employee_002      Support          14   43810
+  1003 Employee_003 Data Science          16   77098
+  1004 Employee_004      Support           4   43313
+  1005 Employee_005      Support           2   43786
+
+--- Shape / missing values --- [aditya khatri 500119453]
+[aditya khatri 500119453] shape: (120, 5)
+EmpID         0
+Name          0
+Department    0
+Experience    0
+Salary        0
+
+--- Descriptive statistics --- [aditya khatri 500119453]
+count       120.00
+mean      66239.81
+std       19639.10
+min       36274.00
+25%       49105.25
+50%       63196.00
+75%       79701.50
+max      115567.00
+
+--- Average salary by department --- [aditya khatri 500119453]
+[aditya khatri 500119453] Data Science   avg =  97,253.53   employees = 15
+[aditya khatri 500119453] Engineering    avg =  83,786.41   employees = 22
+[aditya khatri 500119453] Finance        avg =  72,175.53   employees = 17
+[aditya khatri 500119453] Marketing      avg =  61,783.22   employees = 9
+[aditya khatri 500119453] Sales          avg =  56,746.94   employees = 17
+[aditya khatri 500119453] HR             avg =  49,494.36   employees = 22
+[aditya khatri 500119453] Support        avg =  45,003.67   employees = 18
+[aditya khatri 500119453] saved figure -> avg_salary_bar.png
+[aditya khatri 500119453] saved figure -> salary_boxplot.png
+[aditya khatri 500119453] saved figure -> experience_vs_salary.png
+[aditya khatri 500119453] Highest paying department: Data Science | Lowest: Support
+[aditya khatri 500119453] EXPERIMENT 1 COMPLETED

@@ -1,0 +1,121 @@
+EmpID,Name,Department,Experience,Salary
+1001,Employee_001,HR,5,53845
+1002,Employee_002,Support,14,43810
+1003,Employee_003,Data Science,16,77098
+1004,Employee_004,Support,4,43313
+1005,Employee_005,Support,2,43786
+1006,Employee_006,Sales,18,63929
+1007,Employee_007,Support,8,47290
+1008,Employee_008,HR,14,50859
+1009,Employee_009,Sales,2,43112
+1010,Employee_010,Data Science,7,102426
+1011,Employee_011,Support,14,47848
+1012,Employee_012,Engineering,2,86029
+1013,Employee_013,Sales,9,70141
+1014,Employee_014,Engineering,14,79775
+1015,Employee_015,Finance,8,53319
+1016,Employee_016,Support,6,43869
+1017,Employee_017,Engineering,18,68402
+1018,Employee_018,HR,8,52923
+1019,Employee_019,Support,8,48868
+1020,Employee_020,Engineering,10,100042
+1021,Employee_021,Sales,6,61530
+1022,Employee_022,Finance,3,79467
+1023,Employee_023,Finance,4,81607
+1024,Employee_024,Marketing,10,72848
+1025,Employee_025,HR,8,42240
+1026,Employee_026,Data Science,1,90585
+1027,Employee_027,Engineering,17,74544
+1028,Employee_028,Support,15,50259
+1029,Employee_029,Data Science,14,94364
+1030,Employee_030,Finance,1,71391
+1031,Employee_031,Sales,19,58722
+1032,Employee_032,Engineering,14,80330
+1033,Employee_033,Support,7,36274
+1034,Employee_034,Sales,18,63302
+1035,Employee_035,HR,10,48072
+1036,Employee_036,Engineering,6,86678
+1037,Employee_037,HR,19,39906
+1038,Employee_038,Data Science,15,82439
+1039,Employee_039,Support,12,46693
+1040,Employee_040,Finance,18,73537
+1041,Employee_041,Sales,3,53939
+1042,Employee_042,HR,1,46765
+1043,Employee_043,Data Science,13,115567
+1044,Employee_044,Finance,19,78293
+1045,Employee_045,Marketing,7,63090
+1046,Employee_046,Finance,12,70275
+1047,Employee_047,Sales,10,55959
+1048,Employee_048,HR,12,59331
+1049,Employee_049,Data Science,7,93386
+1050,Employee_050,HR,14,50407
+1051,Employee_051,Engineering,12,83929
+1052,Employee_052,Finance,3,75042
+1053,Employee_053,Data Science,2,100029
+1054,Employee_054,Support,1,44947
+1055,Employee_055,Engineering,11,76999
+1056,Employee_056,HR,16,55029
+1057,Employee_057,Finance,15,78272
+1058,Employee_058,Engineering,2,77397
+1059,Employee_059,Sales,16,56467
+1060,Employee_060,Support,3,50914
+1061,Employee_061,Marketing,4,46775
+1062,Employee_062,Marketing,15,59591
+1063,Employee_063,Support,3,44866
+1064,Employee_064,Engineering,14,103296
+1065,Employee_065,Sales,14,59079
+1066,Employee_066,HR,15,49434
+1067,Employee_067,HR,15,43139
+1068,Employee_068,Engineering,2,70875
+1069,Employee_069,Engineering,16,80085
+1070,Employee_070,Marketing,12,71852
+1071,Employee_071,Marketing,3,63639
+1072,Employee_072,Data Science,16,103510
+1073,Employee_073,Support,12,44932
+1074,Employee_074,Sales,18,64101
+1075,Employee_075,Sales,10,54797
+1076,Employee_076,Data Science,7,97895
+1077,Employee_077,Sales,8,57941
+1078,Employee_078,Data Science,17,114492
+1079,Employee_079,HR,16,49165
+1080,Employee_080,Finance,3,73998
+1081,Employee_081,Sales,15,45428
+1082,Employee_082,HR,1,43158
+1083,Employee_083,HR,12,47497
+1084,Employee_084,Support,9,46349
+1085,Employee_085,HR,1,56490
+1086,Employee_086,Finance,5,80585
+1087,Employee_087,Support,5,47915
+1088,Employee_088,Engineering,3,81639
+1089,Employee_089,Sales,8,62751
+1090,Employee_090,HR,1,49675
+1091,Employee_091,HR,3,48926
+1092,Employee_092,HR,2,51666
+1093,Employee_093,Sales,12,49269
+1094,Employee_094,Marketing,8,49900
+1095,Employee_095,Engineering,19,99158
+1096,Employee_096,Data Science,10,104575
+1097,Employee_097,Support,14,38087
+1098,Employee_098,Finance,17,79677
+1099,Employee_099,Support,19,40046
+1100,Employee_100,Finance,12,76743
+1101,Employee_101,HR,4,51994
+1102,Employee_102,Data Science,6,79164
+1103,Employee_103,Engineering,1,90773
+1104,Employee_104,Data Science,16,100897
+1105,Employee_105,Finance,8,69774
+1106,Employee_106,Engineering,2,76855
+1107,Employee_107,Engineering,6,94965
+1108,Employee_108,Engineering,5,81222
+1109,Employee_109,Finance,11,43406
+1110,Employee_110,Finance,18,75362
+1111,Employee_111,Finance,7,66236
+1112,Employee_112,Sales,17,44231
+1113,Employee_113,Engineering,19,90010
+1114,Employee_114,Data Science,4,102376
+1115,Employee_115,Engineering,15,91005
+1116,Employee_116,Marketing,16,53485
+1117,Employee_117,HR,11,41409
+1118,Employee_118,HR,18,56946
+1119,Employee_119,Engineering,14,69293
+1120,Employee_120,Marketing,16,74869

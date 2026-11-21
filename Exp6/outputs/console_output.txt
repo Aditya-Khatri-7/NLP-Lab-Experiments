@@ -1,0 +1,41 @@
+======================================================================
+EXPERIMENT 6 - N-gram Language Model and Smoothing
+aditya khatri 500119453
+======================================================================
+[aditya khatri 500119453] train sentences: 3831 | test sentences: 426 | vocabulary |V| = 5295
+[aditya khatri 500119453] tokens N = 85,968 | unique bigrams = 42,528 | unique trigrams = 66,259
+
+--- Worked example: P(w | previous) for the bigram 'of the' --- [aditya khatri 500119453]
+[aditya khatri 500119453] MLE            P(the | of) = 0.29432
+[aditya khatri 500119453] Laplace        P(the | of) = 0.09635
+[aditya khatri 500119453] Add-k(0.05)    P(the | of) = 0.26687
+[aditya khatri 500119453] Interpolated   P(the | of) = 0.22490
+[aditya khatri 500119453] Kneser-Ney     P(the | of) = 0.29890
+[aditya khatri 500119453] unseen bigram P(zebra | of): MLE = 0.0 | Laplace = 1.27e-04 | KN = 5.75e-08
+[aditya khatri 500119453] top bigrams: [('<s> <s>', 3831), ('of the', 757), ('<s> the', 710), ('the <unk>', 537), ('in the', 527), ('<unk> <unk>', 517)]
+
+--- Perplexity on held-out test set (lower is better) --- [aditya khatri 500119453]
+[aditya khatri 500119453] Unigram (Laplace)        perplexity =       431.20
+[aditya khatri 500119453] Bigram MLE               perplexity =    249670.50   (zero-probability clipped at 1e-12)
+[aditya khatri 500119453] Bigram Laplace           perplexity =      1156.23
+[aditya khatri 500119453] Bigram Add-k 0.05        perplexity =       536.42
+[aditya khatri 500119453] Bigram Interpolation     perplexity =       268.09
+[aditya khatri 500119453] Bigram Kneser-Ney        perplexity =       220.18
+[aditya khatri 500119453] Trigram Laplace          perplexity =      3248.92
+[aditya khatri 500119453] Trigram Interp+KN        perplexity =       347.21
+[aditya khatri 500119453] Trigram Stupid Backoff   perplexity =       338.77
+[aditya khatri 500119453] best add-k: 0.01 -> PP 481.3 | best KN discount: 0.9 -> PP 220.0
+
+--- Generated sentences --- [aditya khatri 500119453]
+[aditya khatri 500119453] 2-gram: convenience and idaho made ready to be done even though most of the three fronts did they go
+[aditya khatri 500119453] 2-gram: he was immediately proved he went beyond questions about jack collins injured a fire fighting the russians who
+[aditya khatri 500119453] 2-gram: molvar sw will meet again stirred the hungarian who has roger williams hartsfield home offices are expected lines
+[aditya khatri 500119453] 3-gram: use one chicken breast for each additional people up to the congo along with bobby
+[aditya khatri 500119453] 3-gram: after television la dolce vita
+[aditya khatri 500119453] 3-gram: benington said in telling his children
+[aditya khatri 500119453] saved figure -> perplexity_comparison.png
+[aditya khatri 500119453] saved figure -> hyperparameter_tuning.png
+[aditya khatri 500119453] saved figure -> bigram_heatmap.png
+[aditya khatri 500119453] saved figure -> zipf_law.png
+[aditya khatri 500119453] saved figure -> frequency_of_frequencies.png
+[aditya khatri 500119453] EXPERIMENT 6 COMPLETED

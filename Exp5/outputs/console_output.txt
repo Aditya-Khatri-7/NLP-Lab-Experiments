@@ -1,0 +1,53 @@
+======================================================================
+EXPERIMENT 5 - POS Tagging and Chunking
+aditya khatri 500119453
+======================================================================
+
+--- Part 1: tagging 500 tweets --- [aditya khatri 500119453]
+[aditya khatri 500119453] tweets: 500 | tokens: 6105
+[aditya khatri 500119453] [('#FollowFriday', 'HT'), ('@France_Inte', 'USR'), ('@PKuchly57', 'USR'), ('@Milipol_Paris', 'USR'), ('for', 'IN'), ('being', 'VBG'), ('top', 'JJ'), ('engaged', 'VBN'), ('members', 'NNS'), ('in', 'IN'), ('my', 'PRP$'), ('community', 'NN'), ('this', 'DT'), ('week', 'NN'), (':)', 'EMO')]
+[aditya khatri 500119453] [('@Lamb2ja', 'USR'), ('Hey', 'NNP'), ('James', 'NNP'), ('!', '.'), ('How', 'NNP'), ('odd', 'JJ'), (':/', 'EMO'), ('Please', 'NNP'), ('call', 'VB'), ('our', 'PRP$'), ('Contact', 'NNP'), ('Centre', 'NNP'), ('on', 'IN'), ('02392441234', 'CD'), ('and', 'CC'), ('we', 'PRP'), ('will', 'MD'), ('be', 'VB'), ('able', 'JJ'), ('to', 'TO'), ('assist', 'VB'), ('you', 'PRP'), (':)', 'EMO'), ('Many', 'JJ'), ('thanks', 'NNS'), ('!', '.')]
+[aditya khatri 500119453] [('@DespiteOfficial', 'USR'), ('we', 'PRP'), ('had', 'VBD'), ('a', 'DT'), ('listen', 'VBN'), ('last', 'JJ'), ('night', 'NN'), (':)', 'EMO'), ('As', 'IN'), ('You', 'PRP'), ('Bleed', 'VBP'), ('is', 'VBZ'), ('an', 'DT'), ('amazing', 'JJ'), ('track', 'NN'), ('.', '.'), ('When', 'WRB'), ('are', 'VBP'), ('you', 'PRP'), ('in', 'IN'), ('Scotland', 'NNP'), ('?', '.'), ('!', '.')]
+[aditya khatri 500119453] categories: {'Noun': 1398, 'Function word': 880, 'Verb': 877, 'Pronoun': 607, 'Punct/Other': 581, 'Emoticon': 505, 'Mention': 449, 'Adjective': 364, 'Adverb': 253, 'Hashtag': 123, 'Number': 58, 'Interjection': 10}
+[aditya khatri 500119453] top 10 tags: [('NN', 749), ('EMO', 523), ('NNP', 480), ('PRP', 476), ('USR', 449), ('JJ', 348), ('IN', 336), ('.', 280), ('DT', 266), ('RB', 248)]
+[aditya khatri 500119453] Noun       top: ['week', 'community', 'thanks', '"', 'hi', 'today', 'love', 'day']
+[aditya khatri 500119453] Verb       top: ['is', 'have', 'be', 'being', 'follow', 'are', 'go', 'can']
+[aditya khatri 500119453] Adjective  top: ['top', 'new', 'good', 'follow', 'much', 'happy', 'next', 'great']
+[aditya khatri 500119453] Hashtag    top: ['#followfriday', '#climatechange', '#cc', '#uniteblue', '#tcot', '#masaantoday', '#snapchat', '#flipkartfashionfriday']
+[aditya khatri 500119453] Mention    top: ['@jnlazts', '@barsandmelody', '@969horan696', '@youtube', '@littlemix', '@kalinwhite', '@hushedapp', '@bhaktisbanter']
+[aditya khatri 500119453] saved figure -> pos_tag_distribution.png
+[aditya khatri 500119453] saved figure -> top_words_per_class.png
+
+--- Part 2: POS tagging and chunking --- [aditya khatri 500119453]
+[aditya khatri 500119453] sentence: The intelligent student solved the difficult NLP problem in the laboratory.
+[aditya khatri 500119453] tags    : [('The', 'DT'), ('intelligent', 'JJ'), ('student', 'NN'), ('solved', 'VBD'), ('the', 'DT'), ('difficult', 'JJ'), ('NLP', 'NNP'), ('problem', 'NN'), ('in', 'IN'), ('the', 'DT'), ('laboratory', 'NN'), ('.', '.')]
+[aditya khatri 500119453] tree    : (S   (NP The/DT intelligent/JJ student/NN)   (VP solved/VBD)   (NP the/DT difficult/JJ NLP/NNP problem/NN)   (PP in/IN (NP the/DT laboratory/NN))   ./.)
+[aditya khatri 500119453] sentence: Machine learning models can quickly process large text corpora.
+[aditya khatri 500119453] tags    : [('Machine', 'NN'), ('learning', 'VBG'), ('models', 'NNS'), ('can', 'MD'), ('quickly', 'RB'), ('process', 'VB'), ('large', 'JJ'), ('text', 'NN'), ('corpora', 'NN'), ('.', '.')]
+[aditya khatri 500119453] tree    : (S   (NP Machine/NN)   (VP learning/VBG)   (NP models/NNS)   can/MD   quickly/RB   (VP process/VB)   (NP large/JJ text/NN corpora/NN)   ./.)
+[aditya khatri 500119453] sentence: She is reading a new book about natural language processing.
+[aditya khatri 500119453] tags    : [('She', 'PRP'), ('is', 'VBZ'), ('reading', 'VBG'), ('a', 'DT'), ('new', 'JJ'), ('book', 'NN'), ('about', 'IN'), ('natural', 'JJ'), ('language', 'NN'), ('processing', 'NN'), ('.', '.')]
+[aditya khatri 500119453] tree    : (S   She/PRP   (VP is/VBZ reading/VBG)   (NP a/DT new/JJ book/NN)   (PP about/IN (NP natural/JJ language/NN processing/NN))   ./.)
+                                   sentence chunk                              text
+The intelligent student solved the diffi...    NP           The intelligent student
+The intelligent student solved the diffi...    VP                            solved
+The intelligent student solved the diffi...    NP         the difficult NLP problem
+The intelligent student solved the diffi...    PP                 in the laboratory
+The intelligent student solved the diffi...    NP                    the laboratory
+Machine learning models can quickly proc...    NP                           Machine
+Machine learning models can quickly proc...    VP                          learning
+Machine learning models can quickly proc...    NP                            models
+Machine learning models can quickly proc...    VP                           process
+Machine learning models can quickly proc...    NP                large text corpora
+She is reading a new book about natural ...    VP                        is reading
+She is reading a new book about natural ...    NP                        a new book
+She is reading a new book about natural ...    PP about natural language processing
+She is reading a new book about natural ...    NP       natural language processing
+[aditya khatri 500119453] top noun phrases in tweets: [('this week', 21), ('#followfriday', 20), ('my community', 20), ('thanks', 13), ('love', 9), ('@jnlazts', 9), ('a lot', 7), ('hi bam', 6), ('@barsandmelody', 6), ('my bestfriend', 6)]
+[aditya khatri 500119453] saved figure -> chunk_diagram.png
+
+--- Part 3: HMM tagger with Viterbi decoding (Penn Treebank sample) --- [aditya khatri 500119453]
+[aditya khatri 500119453] HMM-Viterbi accuracy on 7928 test tokens: 92.15%
+[aditya khatri 500119453] example: [('the', 'DET'), ('quick', 'ADJ'), ('brown', 'NOUN'), ('fox', 'VERB'), ('jumps', 'X'), ('over', 'ADP'), ('the', 'DET'), ('lazy', 'ADJ'), ('dog', 'NOUN')]
+[aditya khatri 500119453] saved figure -> hmm_confusion.png
+[aditya khatri 500119453] EXPERIMENT 5 COMPLETED

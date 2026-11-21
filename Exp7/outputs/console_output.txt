@@ -1,0 +1,36 @@
+======================================================================
+EXPERIMENT 7 - Sentiment Analysis
+aditya khatri 500119453
+======================================================================
+[aditya khatri 500119453] reviews: 2000 | positive: 1000 | negative: 1000
+
+--- Part 1: polarity and subjectivity of sample sentences --- [aditya khatri 500119453]
+[aditya khatri 500119453] Positive pol=+0.50 subj=0.53 vader=+0.86 | I absolutely love this movie, the acting is brilliant!
+[aditya khatri 500119453] Negative pol=-1.00 subj=1.00 vader=-0.62 | This was the worst film I have ever seen.
+[aditya khatri 500119453] Neutral  pol=+0.00 subj=0.00 vader=+0.00 | The movie was released in 2019 and runs for two hours.
+[aditya khatri 500119453] Positive pol=+0.10 subj=0.45 vader=+0.25 | I think the plot is quite interesting but a bit slow.
+[aditya khatri 500119453] Negative pol=-0.35 subj=0.60 vader=-0.34 | It is not good at all.
+[aditya khatri 500119453] Positive pol=+0.43 subj=0.54 vader=-0.09 | The soundtrack is okay, nothing special.
+[aditya khatri 500119453] saved figure -> polarity_subjectivity_samples.png
+
+--- Part 2a: lexicon methods on all reviews --- [aditya khatri 500119453]
+[aditya khatri 500119453] TextBlob  accuracy (threshold 0): 60.00%
+[aditya khatri 500119453] VADER     accuracy (threshold 0): 63.50%
+[aditya khatri 500119453] mean subjectivity: 0.514 | pos reviews pol +0.136 | neg reviews pol +0.050
+[aditya khatri 500119453] saved figure -> lexicon_score_distribution.png
+
+--- Part 2b: machine-learning classifiers (TF-IDF) --- [aditya khatri 500119453]
+[aditya khatri 500119453] TF-IDF features: 28762
+[aditya khatri 500119453] Logistic Regression  acc=86.40% P=0.855 R=0.876 F1=0.866
+[aditya khatri 500119453] Naive Bayes          acc=81.40% P=0.815 R=0.812 F1=0.814
+[aditya khatri 500119453] Linear SVM           acc=86.20% P=0.855 R=0.872 F1=0.863
+[aditya khatri 500119453] best model: Logistic Regression
+[aditya khatri 500119453] most NEGATIVE words: ['bad', 'worst', 'supposed', 'boring', 'plot', 'unfortunately', 'awful', 'script', 'stupid', 'ridiculous', 'wasted', 'dull']
+[aditya khatri 500119453] most POSITIVE words: ['great', 'life', 'seen', 'especially', 'perfect', 'family', 'terrific', 'american', 'quite', 'hilarious', 'perfectly', 'performances']
+[aditya khatri 500119453] predict 'a wonderful, moving and brilliant film' -> POSITIVE
+[aditya khatri 500119453] predict 'boring, predictable and a complete waste of time' -> NEGATIVE
+[aditya khatri 500119453] saved figure -> model_comparison.png
+[aditya khatri 500119453] saved figure -> confusion_matrices.png
+[aditya khatri 500119453] saved figure -> roc_curves.png
+[aditya khatri 500119453] saved figure -> top_features.png
+[aditya khatri 500119453] EXPERIMENT 7 COMPLETED
