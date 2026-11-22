@@ -60,7 +60,7 @@ ax.scatter(df.Experience, df.Salary, c=[PAL[order.index(d) % 8] for d in df.Depa
 m, c = np.polyfit(df.Experience, df.Salary, 1); xs = np.array([df.Experience.min(), df.Experience.max()])
 ax.plot(xs, m * xs + c, "k--", label=f"trend: +{m:,.0f} per year")
 ax.set(title="Experience vs Salary", xlabel="Years of experience", ylabel="Salary"); ax.legend()
-save(fig, OUT, "experience_vs_salary.png", "Fig 3: Salary grows with experience")
+save(fig, OUT, "experience_vs_salary.png", "Fig 3: Experience vs salary with fitted trend line")
 
 say("Highest paying department:", avg.index[0], "| Lowest:", avg.index[-1])
 say("EXPERIMENT 1 COMPLETED")
